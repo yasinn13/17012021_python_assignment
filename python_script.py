@@ -98,7 +98,9 @@ for station in stations_list:
             "relative_yearly_precipitation": [] }}
     results.append(partial_results)
     
-print(results)
+with open('results.json', 'w', encoding='utf-8') as file:
+    json.dump(results, file, indent=4) 
+
 
 
 

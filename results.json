@@ -1,36 +1,94 @@
-{
-    "Seattle": {
-        "station": "GHCND:US1WAKG0038",
-        "state": "WA",
-        "total_monthly_precipitation": [
-            1693,
-            730,
-            870,
-            752,
-            924,
-            601,
-            54,
-            104,
-            996,
-            908,
-            1192,
-            2356
-        ],
-        "total_yearly_precipitation": 11180,
-        "relative_monthly_precipitation": [
-            0.15143112701252237,
-            0.06529516994633273,
-            0.0778175313059034,
-            0.06726296958855098,
-            0.08264758497316636,
-            0.053756708407871195,
-            0.00483005366726297,
-            0.009302325581395349,
-            0.089087656529517,
-            0.081216457960644,
-            0.10661896243291592,
-            0.2107334525939177
-        ],
-        "relative_yearly_precipitation": 0
+[
+    {
+        "Cincinnati": {
+            "station": "GHCND:USW00093814",
+            "state": "OH",
+            "total_monthly_precipitation": [
+                512,
+                588,
+                889,
+                491,
+                1439,
+                1764,
+                614,
+                290,
+                145,
+                377,
+                1762,
+                450
+            ],
+            "total_yearly_precipitation": 20501,
+            "relative_monthly_precipitation": [],
+            "relative_yearly_precipitation": []
+        }
+    },
+    {
+        "Seattle": {
+            "station": "GHCND:US1WAKG0038",
+            "state": "WA",
+            "total_monthly_precipitation": [
+                1693,
+                730,
+                870,
+                752,
+                924,
+                601,
+                54,
+                104,
+                996,
+                908,
+                1192,
+                2356
+            ],
+            "total_yearly_precipitation": 31681,
+            "relative_monthly_precipitation": [],
+            "relative_yearly_precipitation": []
+        }
+    },
+    {
+        "Maui": {
+            "station": "GHCND:USC00513317",
+            "state": "HI",
+            "total_monthly_precipitation": [
+                362,
+                201,
+                861,
+                553,
+                89,
+                144,
+                276,
+                259,
+                270,
+                432,
+                846,
+                833
+            ],
+            "total_yearly_precipitation": 36807,
+            "relative_monthly_precipitation": [],
+            "relative_yearly_precipitation": []
+        }
+    },
+    {
+        "San Diego": {
+            "station": "GHCND:US1CASD0032",
+            "state": "CA",
+            "total_monthly_precipitation": [
+                1323,
+                853,
+                144,
+                481,
+                5,
+                3,
+                34,
+                0,
+                14,
+                617,
+                394,
+                1903
+            ],
+            "total_yearly_precipitation": 42578,
+            "relative_monthly_precipitation": [],
+            "relative_yearly_precipitation": []
+        }
     }
-}
+]
