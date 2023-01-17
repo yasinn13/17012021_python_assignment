@@ -26,7 +26,35 @@ results = {
     "Seattle":{
         "station": "GHCND:US1WAKG0038",
         "state": "WA",
-        "total_monthly_precipitation": total_monthly_precipitation   }
+        "total_monthly_precipitation": total_monthly_precipitation,
+        "total_yearly_precipitation": [],
+        "relative_monthly_precipitation": [],
+        "relative_yearly_precipitation": [] }
+
+}
+
+with open('results.json', 'w', encoding='utf-8') as file:
+    json.dump(results, file, indent=4) 
+
+#Calculate yearly precipitation
+total_yearly_precipitation = 0
+for measurement in seattle_precipitation_data:
+    total_yearly_precipitation += measurement['value']
+
+#Calculate relative monthly precipitation
+relative_monthly_precipitation = []
+for month in total_monthly_precipitation:
+    relative_monthly_precipitation.append(month/total_yearly_precipitation)
+
+#Create results file
+results = {
+    "Seattle":{
+        "station": "GHCND:US1WAKG0038",
+        "state": "WA",
+        "total_monthly_precipitation": total_monthly_precipitation,
+        "total_yearly_precipitation": total_yearly_precipitation,
+        "relative_monthly_precipitation": relative_monthly_precipitation,
+        "relative_yearly_precipitation": 0 }
 
 }
 
